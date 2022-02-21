@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Difference Vairous Method</h1>
+<h3>@ViewData["Name"]</h3>
+<h3>@TempData["fname"]</h3>
+<a asp-action="viewuser" asp-controller="Defaullt">Show</a>
+@{
+    TempData.Keep("fname");
+ }
